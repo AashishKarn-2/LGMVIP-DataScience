@@ -8,5 +8,5 @@
 
 <h3> Task 2 : Stock market analysis and forecasting  <h3>
 
-<h3> Task 2 : Image to Pencil Sketch <h3>
+<h3> Task 3 : Image to Pencil Sketch <h3>
 

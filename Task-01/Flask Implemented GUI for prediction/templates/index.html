@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Input Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      form {
+        width: 50%;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flask Input Form</h1>
+    <form method="POST" action="/predict">
+      <label for="petal_length">Petal Length:</label>
+      <input type="text" id="petal_length" name="petal_length" required>
+
+      <label for="petal_width">Petal Width:</label>
+      <input type="text" id="petal_width" name="petal_width" required>
+
+      <label for="sepal_length">Sepal Length:</label>
+      <input type="text" id="sepal_length" name="sepal_length" required>
+
+      <label for="sepal_width">Sepal Width:</label>
+      <input type="text" id="sepal_width" name="sepal_width" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
